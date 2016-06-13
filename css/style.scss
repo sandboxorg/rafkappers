@@ -278,7 +278,15 @@ label {font-weight: normal;}
 #controls a {color: #e9e9e9; text-decoration: none;}
 #controls a:hover, #controls a:active {color: silver;}
 
-
+#icons .container .row > div {padding: 90px 0;}
+#icons img {
+display: inline-block;
+margin: 0 19px;
+height: 18px;
+vertical-align: middle;
+}
+#icons img#balmain {height: 27px; margin-top: 11px;}
+#icons img#flipinhair {height: 32px;}
 
 
 
