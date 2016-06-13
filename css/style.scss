@@ -119,15 +119,15 @@ body.iOS .salon3 {background-attachment: scroll;}
 .light .post-content {}
 .light .post-content p {color: #292929;}
 
-.salon {height: 502px; background: url('../img/kapper-amsterdam-salon.jpg') center center no-repeat; background-size: cover; background-attachment: fixed;}
-.salon .circle {text-align: center; background: #e9e9e9; color: $accentkleur; height: 450px; width: 450px; margin: 25px 0 0 -225px; border-radius: 250px; position: absolute; left: 50%;}
+.salon {height: 502px; background: url('../img/rafkappers.jpg') center center no-repeat; background-size: cover; background-attachment: fixed;}
+.salon .circle {text-align: center; background: #292929 url('/img/bg.png') center top; color: #e9e9e9; height: 450px; width: 450px; margin: 25px 0 0 -225px; border-radius: 250px; position: absolute; left: 50%;}
 .salon .circle p {margin: 0 auto; display: block; width: 260px; position: relative; right: 40px;}
 .salon .circle p .day {display: inline-block; width: 130px;}
 .salon .circle p .time {display: inline-block; width: 130px;}
 .salon .post-header {padding: 87px 0 0;}
-.salon .post-header h1 {margin-bottom: 5px;}
+.salon .post-header h1 {}
 .salon .post-content {}
-.salon .post-content p {color: #292929;}
+.salon .post-content p {color: #e9e9e9;}
 
 .salon2 {height: 502px; background: url('../img/kapper-amsterdam-salon2.jpg') center center no-repeat; background-size: cover; background-attachment: fixed;}
 .page-template .salon2 {height: 240px; background-attachment: scroll;}
@@ -201,7 +201,7 @@ footer a, footer a:hover, footer a:focus {color: #e9e9e9;}
 .old_iOS.page-template .navbar-default, 
 .old_iOS .navbar-default.attop {position: absolute;}
 
-h1 {text-transform: uppercase; font-weight: bold; font-size: 30px; letter-spacing: 4px; margin-bottom: 0.5em; margin-top: 0px;}
+h1 {text-transform: uppercase; font-weight: bold; font-size: 30px; letter-spacing: 4px; margin-bottom: 1.1em; margin-top: 0px;}
 h3 {font-weight: bold; font-size: 21px; text-transform: uppercase;}
 p {margin-bottom: 2em;}
 .post-content h2 {margin-bottom: 0; margin-top: 25px; color: #292929; font-weight: bold;}
@@ -214,17 +214,17 @@ a {text-decoration: underline;}
 a:hover {text-decoration: none;}
 .post-content {font-weight: normal;}
 
-.btn {font-family: 'Futura Medium'; color: #e9e9e9; text-decoration: none; padding-left: 25px; padding-right: 25px; border-radius: 0; border: 0; font-size: 17px; text-transform: uppercase;
+.btn {font-size: 16px; line-height: 1.8em; font-family: 'Futura Medium'; color: #e9e9e9; text-decoration: none; padding-left: 25px; padding-right: 25px; border-radius: 0; border: 0; text-transform: uppercase;
     -webkit-transition: all 0.2s ease;                  
     -moz-transition: all 0.2s ease;                 
     -o-transition: all 0.2s ease;   
     -ms-transition: all 0.2s ease;          
     transition: all 0.2s ease;
 }
-.btn-default:active:hover, .btn-default:focus, .btn-default:hover, .btn-default {opacity: 1; border: 1px solid $accentkleur !important; background: transparent; color: $accentkleur; -webkit-box-shadow: none; box-shadow: none;}
+.btn-default:active:hover, .btn-default:focus, .btn-default:hover, .btn-default {opacity: 1; border: 1px solid $accentkleur!important; background: transparent; color: $accentkleur; -webkit-box-shadow: none; box-shadow: none;}
 .btn-default:active:hover, .btn-default:focus, .btn-default:hover {background: $highlightkleur; border-color: $highlightkleur!important;}
-.btn-primary:active:hover, .btn-primary:focus, .btn-primary:hover, .btn-primary {opacity: 1; border: 1px solid $accentkleur !important; background: $accentkleur; color: $tekstkleur_op_accent; -webkit-box-shadow: none; box-shadow: none;}
-.btn-primary:active:hover, .btn-primary:focus, .btn-primary:hover {background: $highlightkleur; border-color: $highlightkleur!important;}
+.btn-primary:active:hover, .btn-primary:focus, .btn-primary:hover, .btn-primary {opacity: 1; border: 1px solid $accentkleur!important; background: $accentkleur; color: $tekstkleur_op_accent; -webkit-box-shadow: none; box-shadow: none;}
+.btn-primary:active:hover, .btn-primary:focus, .btn-primary:hover {background: transparent; color: $accentkleur!important; border-color: $accentkleur!important;}
 .btn-default:active:hover, .btn-default:hover, .btn-primary:active:hover, .btn-primary:hover {opacity: 1;}
 .btn:active:hover, .btn:focus, .btn:hover {color: #e9e9e9;}
 .intro .btn-primary:hover, .intro .btn-default {color: #e9e9e9!important; border: 1px solid #e9e9e9!important; background: transparent!important;}
@@ -254,7 +254,7 @@ a:hover {text-decoration: none;}
 }
 
 .team {padding: 90px 0; text-align: center;}
-.team > div {}
+.team img {width: 100%; border: 1px solid #e9e9e9;}
 
 
 .mobile {display: none;}
@@ -315,7 +315,6 @@ label {font-weight: normal;}
   .desktop {display: none;}
 }
 @media all and (max-width: 450px) {
-  p, .post-content{font-family: Georgia, 'PT Serif'!important;}
   .salon .circle p {width: 280px;}
   .salon .circle p .time {width: 140px;}
   .salon .circle p .day {width: 140px;}
