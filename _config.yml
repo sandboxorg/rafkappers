@@ -8,23 +8,7 @@ defaults:
       type: 'posts'
     values:
       layout: 'post'
-  - scope:
-      path: ''
-      type: 'members'
-    values:
-      layout: 'member'
 
 permalink: /nieuws/:year/:month/:day/:title/
 
-collections:
-  members:
-    output: true
-    permalink: /team/:path/
-  treatments:
-    output: true
-    permalink: /behandelingen/:path/
-  collecties:
-    output: true
-    permalink: /collecties/:path/
-
-title: 'Kapper Koffijberg Hairdressers in Amsterdam'
+title: 'Raf Kappers in Huissen'
