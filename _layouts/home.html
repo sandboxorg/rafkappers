@@ -43,11 +43,11 @@
                 <article>
                      
                         <header class="post-header">
-                          <h1 class="post-title editable">Topkapper in Amsterdam</h1>
+                          <h1 class="post-title editable">Over Raf Kappers</h1>
                         </header>
                       
-                        <div class="post-content"><div class="editable"><p>Kapsalon Koffijberg heeft in het verleden onder andere de Global Salon Business Award gewonnen en was in 2013 winnaar van de Coiffure Award. Onze kappers en kapsters krijgen ook veel erkenning uit de branche in de vorm van andere prijzen. Onze aanpak staat al 40 jaar voor vakmanschap, creativiteit en vernieuwing op het gebied van kapsels, haarkleuringen en styling en is absoluut trendsettend. Onze kappers en kapsters blinken uit in technische vakkundigheid en in persoonlijke aandacht voor hun klanten. <a href="/over-ons/index.html">Lees meer...</a></p></div>
-                              <a href="/collecties/" class="btn btn-primary">Onze collecties</a>
+                        <div class="post-content"><div class="editable"><p>Wat ik als eigenaar van deze salon het belangrijkste vind, is dat je als klant persoonlijke aandacht krijgt en het gevoel krijgt dat je welkom bent. Wij onderscheiden onszelf door de tijd te nemen voor een behandeling, of je nu komt voor het knippen van je vertrouwde kapsel of een nieuwe coup, wij willen dat de klant tevreden de deur uitloopt. Huissen is een prettige stad om te wonen en te werken, ik voel mij er thuis en dat gevoel van thuiskomen wil ik mijn klanten ook bieden. <!--<a href="/over-ons/index.html">lees&nbsp;meer&nbsp;&rarr;</a>--></p></div>
+                              <a href="/#contact" class="btn btn-primary">Contact</a>
                         </div>
                       
                 </article>
@@ -84,78 +84,7 @@
         </div>
         <div class="row post-content">
             <div class="col-lg-9">
-                              <table cellpadding="0" cellspacing="0">
-                              <tr><td><b>Dames</b></td><td class="text-center"><b>Stylist</b></td><td class="text-center"><b>Top-Stylist</b></td><td class="text-center"><b>Master-Stylist<sup>1</sup></b></td></tr>
-                              {% for d in site.data.treatments.ladies %}
-                                  {% for p in d.prijs %}
-                                  <tr><td>{% if d.url != '' %}<a href="{{ d.url }}">{{ d.item }}</a>{% else %}{{ d.item }}{% endif %}</td><td class="text-center">{{ p.stylist }}</td><td class="text-center">{{ p.topstylist }}</td><td class="text-center">{{ p.masterstylist }}</td></tr>
-                                  {% endfor %}
-                              {% endfor %}
-                              <tr><td colspan="4"><br /><b>Heren</b></td></tr>
-                              {% for d in site.data.treatments.gents %}
-                                  {% for p in d.prijs %}
-                                  <tr><td>{% if d.url != '' %}<a href="{{ d.url }}">{{ d.item }}</a>{% else %}{{ d.item }}{% endif %}</td><td class="text-center">{{ p.stylist }}</td><td class="text-center">{{ p.topstylist }}</td><td class="text-center">{{ p.masterstylist }}</td></tr>
-                                  {% endfor %}
-                              {% endfor %}
-                              <tr><td colspan="4"><br /><b>Kinderen / jongeren / studenten<sup>2</sup></b></td></tr>
-                              {% for d in site.data.treatments.discounts %}
-                                  {% for p in d.prijs %}
-                                  <tr><td>{% if d.url != '' %}<a href="{{ d.url }}">{{ d.item }}</a>{% else %}{{ d.item }}{% endif %}</td><td class="text-center">{{ p.stylist }}</td><td class="text-center">{{ p.topstylist }}</td><td class="text-center">{{ p.masterstylist }}</td></tr>
-                                  {% endfor %}
-                              {% endfor %}
-                              <tr class="expand1"><td colspan="4"><br /><b>Kleur<sup>3</sup></b></td></tr>
-                              {% for d in site.data.treatments.colorings %}
-                                  {% for p in d.prijs %}
-                                  <tr class="expand1"><td>{% if d.url != '' %}<a href="{{ d.url }}">{{ d.item }}</a>{% else %}{{ d.item }}{% endif %}</td><td class="text-center">{{ p.stylist }}</td><td class="text-center">{{ p.topstylist }}</td><td class="text-center">{{ p.masterstylist }}</td></tr>
-                                  {% endfor %}
-                              {% endfor %}
-                              <tr class="expand1"><td colspan="4"><br /><b>Blow-dry-area</b></td></tr>
-                              {% for d in site.data.treatments.blow-dry %}
-                                  {% for p in d.prijs %}
-                                  <tr class="expand1"><td>{% if d.url != '' %}<a href="{{ d.url }}">{{ d.item }}</a>{% else %}{{ d.item }}{% endif %}</td><td class="text-center">{{ p.stylist }}</td><td class="text-center">{{ p.topstylist }}</td><td class="text-center">{{ p.masterstylist }}</td></tr>
-                                  {% endfor %}
-                              {% endfor %}
-                              <tr class="expand1"><td colspan="4"><br /><b>Wassen föhnen</b></td></tr>
-                              {% for d in site.data.treatments.wash-and-dry %}
-                                  {% for p in d.prijs %}
-                                  <tr class="expand1"><td>{% if d.url != '' %}<a href="{{ d.url }}">{{ d.item }}</a>{% else %}{{ d.item }}{% endif %}</td><td class="text-center">{{ p.stylist }}</td><td class="text-center">{{ p.topstylist }}</td><td class="text-center">{{ p.masterstylist }}</td></tr>
-                                  {% endfor %}
-                              {% endfor %}
-                              <tr class="expand1"><td colspan="4"><br /><b>Specials</b></td></tr>
-                              {% for d in site.data.treatments.specials %}
-                                  {% for p in d.prijs %}
-                                  <tr class="expand1"><td>{% if d.url != '' %}<a href="{{ d.url }}">{{ d.item }}</a>{% else %}{{ d.item }}{% endif %}</td><td class="text-center">{{ p.stylist }}</td><td class="text-center">{{ p.topstylist }}</td><td class="text-center">{{ p.masterstylist }}</td></tr>
-                                  {% endfor %}
-                              {% endfor %}
-                              <tr class="expand1"><td colspan="4"><br /><b>Wasmassages</b></td></tr>
-                              {% for d in site.data.treatments.wash-massages %}
-                                  {% for p in d.prijs %}
-                                  <tr class="expand1"><td>{% if d.url != '' %}<a href="{{ d.url }}">{{ d.item }}</a>{% else %}{{ d.item }}{% endif %}</td><td class="text-center">{{ p.stylist }}</td><td class="text-center">{{ p.topstylist }}</td><td class="text-center">{{ p.masterstylist }}</td></tr>
-                                  {% endfor %}
-                              {% endfor %}
-                              <tr class="expand1"><td colspan="4"><br /><b>Extensions<sup>4</sup></b></td></tr>
-                              {% for d in site.data.treatments.extensions %}
-                                  {% for p in d.prijs %}
-                                  <tr class="expand1"><td>{% if d.url != '' %}<a href="{{ d.url }}">{{ d.item }}</a>{% else %}{{ d.item }}{% endif %}</td><td class="text-center">{{ p.stylist }}</td><td class="text-center">{{ p.topstylist }}</td><td class="text-center">{{ p.masterstylist }}</td></tr>
-                                  {% endfor %}
-                              {% endfor %}
-                              </table><br />
-
-
-
-<div id="expand1" style="padding-bottom: 30px; position: relative; top: 5px;"><a id="expandbutton" class="btn btn-primary">Bekijk al onze behandelingen</a></div>
-            </div>
-            <div class="col-lg-3">
-              <div class="sidebar" style="margin-top: 7px;">
-                <p class="smaller editable"><sup>1</sup> Voor Kimm Koffijberg geldt een extra toeslag.<br />
-                  <sup>2</sup> Korting geldt niet in combinatie met andere kortingsacties en niet geldig bij Master-Stylisten en Kleurspecialisten.
-                </p>
-                <div class="expand1">
-                  <p class="smaller editable"><sup>3</sup> Alle kleurbehandelingen zijn inclusief wassen en een complete verzorging (verzorgende crème, hoofdmassage en warme handdoek).<br />
-                  <sup>4</sup> Alle Extention behandelingen worden pas ingepland na een persoonlijk advies van een van onze specialisten. U kunt hiervoor een gratis afspraak maken.</p>
-                </div>
-                <p class="smaller editable"><br />Alle prijzen van de kleurbehandelingen op deze lijst zijn vanaf prijzen. De definitieve prijzen kunnen afwijken van de hierboven genoemde prijzen. De definitieve kleurprijzen zijn mede afhankelijk van de benodigde tijd. De kleurprijzen kunnen afwijken wanneer meer dan de gebruikelijke hoeveelheid product gebruikt moet worden. De kapp(st)er kan u voorafgaand aan de behandeling een prijsopgave doen in onze kapsalon.</p>
-              </div>
+            dsf
             </div>
           </div>
       </div>
@@ -172,8 +101,6 @@
                         <header class="post-header">
                           <h1 class="post-title editable">Team</h1>
                         </header>
-
-                        <div class="post-content editable"><p>Het team van Koffijberg Hairdressers Amsterdam bestaat uit meerdere getalenteerde kappers en kapsters. Binnen het team werken alle kappers volgens &eacute;&eacute;n filosofie: persoonlijke aandacht, vakmanschap en een op maat gesneden advies, waarbij innerlijk en uiterlijk van de klant voorop staan.</p></div>
             </div>
             <div class="col-md-1 col-lg-2"></div>
         </div>
@@ -207,21 +134,7 @@
       </div>
     </div>
 
-    <div class="" id="icons">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <img id="biosilk" src="/img/biosilk.svg" />
-            <img id="balmain" src="/img/balmain.svg" />
-            <img id="maroccanoil" src="/img/maroccanoil.svg" />
-            <img id="sebastian" src="/img/sebastian.svg" />
-            <img id="marcinbane" src="/img/marcinbane.svg" />
-            <img id="chi" src="/img/chi.svg" />
-            <img id="flipinhair" src="/img/flipinhair.svg" />
-          </div>
-        </div>
-      </div>
-    </div>
+
    
 
     {% include footer.html %}

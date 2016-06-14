@@ -109,7 +109,7 @@
                         {% endif %}
                         {% if page.url == '/contact/' or page.url == '/contact/index.html' %}
                         <p><i class="fa icon-whatsapp"></i> Whats-App ons op 06-47882233</p>
-                        <form id="contact_form" action="//formspree.io/receptie@koffijberg.nl" method="POST">
+                        <!--<form id="contact_form" action="//formspree.io/receptie@koffijberg.nl" method="POST">
                         <input type="hidden" name="_next" value="/contact/bedankt/" />
 
 
@@ -226,7 +226,7 @@
                         </div>
 
 
-                        </form>{% endif %}
+                        </form>-->{% endif %}
                         </div>
 
             </div>
@@ -234,8 +234,6 @@
             <div class="hidden-xs col-sm-4 col-md-3 col-lg-3">                         
                         <div class="post-content">
                               <p class="sidebar" style="float: right;">{% include contactinfo.html %}</p>
-
-                              {% if page.url == '/contact/' or page.url == '/contact/index.html' %}<div id="front" class="border rotate"><img class="hidden-xs" src="/img/koffijberg_kapper.jpg" /></div>{% endif %}
                         </div>
             </div>
           </div>
