@@ -78,13 +78,18 @@
     <div class="behandelingen" id="behandelingen">
       <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 text-center">
                 <h1 class="post-title editable">Behandelingen</h1>
             </div>
         </div>
         <div class="row post-content">
-            <div class="col-lg-9">
-            dsf
+             <div class="col-sm-6">
+            <table cellpadding="0" cellspacing="0">
+            {% for treatment in site.data.treatments %}
+              <tr><td>{{ treatment.item }}</td><td>&euro;</td><td>{{ treatment.price }}</td></tr>
+              {% if forloop.index == 10 %}</table></div><div class="col-sm-6"><table cellpadding="0" cellspacing="0">{% endif %}
+            {% endfor %}
+            </table>
             </div>
           </div>
       </div>
@@ -123,13 +128,14 @@
                 <article>
                         <header class="post-header">
                           <h1 class="post-title editable">Contact</h1>
+                          <span>Alléén op afspraak! Bel: 020-325 73 52
                         </header>
                                               
                         <div class="post-content">map
                         </div>
                 </article>
             </div>
-            <div class="col-sm-2 col-lg-3">LANGESTRAAT 86A<br />6851 AT • HUISSEN<br />T : 026 – 325 73 52<br />E : INFO@RAFKAPPERS.NL</div>
+            <div class="col-sm-2 col-lg-3 text-left">{% include contactinfo.html %}</div>
           </div>
       </div>
     </div>
