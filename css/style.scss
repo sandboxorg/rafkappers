@@ -114,6 +114,7 @@ body.iOS .salon {background-attachment: scroll;}
 .intro .btn.desktop {cursor: text; padding: 0; -webkit-user-select: text; -moz-user-select: text; -ms-user-select: text;}
 
 .light {text-align: center; padding: 90px 0; background: #e9e9e9; color: $accentkleur;}
+.light p a {color: #292929;}
 .light .post-content {}
 .light .post-content p {color: #292929;}
 
@@ -238,7 +239,9 @@ a:hover {text-decoration: none;}
 
 .team {padding: 90px 0; text-align: center;}
 .team img {width: 100%; border: 1px solid #e9e9e9;}
-
+.col-centered div[class^="col-"]{
+	float: none; display: inline-block;
+}
 
 .mobile {display: none;}
 .desktop {display: inline;}
