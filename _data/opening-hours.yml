@@ -1,21 +1,21 @@
 - dag: maandag
-  vanaf: '09.15'
-  tot: '19.00'
+  vanaf: gesloten
+  tot: gesloten
 - dag: dinsdag
-  vanaf: '09.15'
-  tot: '21.00'
+  vanaf: '08.30'
+  tot: '18.00'
 - dag: woensdag
-  vanaf: '09.15'
-  tot: '17.30'
+  vanaf: '08.30'
+  tot: '18.00'
 - dag: donderdag
-  vanaf: '09.15'
-  tot: '21.00'
+  vanaf: '08.30'
+  tot: '18.00'
 - dag: vrijdag
-  vanaf: '09.15'
-  tot: '19.00'
+  vanaf: '08.30'
+  tot: '20.00'
 - dag: zaterdag
-  vanaf: '08.15'
-  tot: '17.00'
+  vanaf: '08.30'
+  tot: '16.00'
 - dag: zondag
   vanaf: gesloten
   tot: gesloten
