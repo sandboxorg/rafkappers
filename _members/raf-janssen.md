@@ -1,6 +1,6 @@
 ---
 title: Raf Janssen
-image: /raf.png
+image: /rafjanssen.png
 functie: Eigenaar
 order: 1
 ---
