@@ -1,6 +1,6 @@
 ---
 title: Rosanne den Hertog
-image: /rosanne.png
+image: /2.png
 functie: Styliste
 order: 2
 ---
