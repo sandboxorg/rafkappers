@@ -118,7 +118,7 @@ body.iOS .salon {background-attachment: scroll;}
 .light .post-content {}
 .light .post-content p {color: #292929;}
 
-.salon {height: 650px; background: url('/img/rafkappers2.jpg') center center no-repeat; background-size: cover; background-attachment: fixed;}
+.salon {height: 650px; background: url('/img/rafkappers3.jpg') center center no-repeat; background-size: cover; background-attachment: fixed;}
 .salon .circle {
 	text-align: center; 
 	background: #292929 url('/img/bg.png') center top; 
@@ -295,7 +295,7 @@ vertical-align: middle;
 @media all and (max-width: 767px) {
   .navbar-default .navbar-collapse {background: $accentkleur; border: none;}
   .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {margin-left: 15px!important;}
-  .salon {background-image: url('/img/rafkappers2.jpg');}
+  .salon {background-image: url('/img/rafkappers3.jpg');}
 }
 @media all and (max-width: 600px) {
   .mobile {display: inline-block;}
@@ -305,5 +305,5 @@ vertical-align: middle;
   .salon .circle p {width: 280px;}
   .salon .circle p .time {width: 140px;}
   .salon .circle p .day {width: 140px;}
-  .salon {background-image: url('/img/rafkappers2.jpg');}
+  .salon {background-image: url('/img/rafkappers3.jpg');}
 }
