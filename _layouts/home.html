@@ -2,13 +2,32 @@
 <html>
 
   {% include head.html %}
-
+<style>
+@media all and (max-width: 767px) {
+  #slide1 {background-image: url('//images.weserv.nl/?url=www.rafkappers.nl{{ page.slider[0].image }}?w=767&h=600&t=squaredown')!important; background-size: cover!important;}
+  #slide2 {background-image: url('//images.weserv.nl/?url=www.rafkappers.nl{{ page.slider[1].image }}?w=767&h=600&t=squaredown')!important; background-size: cover!important;}
+  #slide3 {background-image: url('//images.weserv.nl/?url=www.rafkappers.nl{{ page.slider[2].image }}?w=767&h=600&t=squaredown')!important; background-size: cover!important;}
+}
+@media all and (max-width: 450px) {
+  #slide1 {background-image: url('//images.weserv.nl/?url=www.rafkappers.nl{{ page.slider[0].image }}?w=450&h=600&t=squaredown')!important; background-size: cover!important;}
+  #slide2 {background-image: url('//images.weserv.nl/?url=www.rafkappers.nl{{ page.slider[1].image }}?w=450&h=600&t=squaredown')!important; background-size: cover!important;}
+  #slide3 {background-image: url('//images.weserv.nl/?url=www.rafkappers.nl{{ page.slider[2].image }}?w=450&h=600&t=squaredown')!important; background-size: cover!important;}
+}
+</style>
   <body class="home" id="top">
   <div id="splash"><table cellpadding="0" cellspacing="0"><tr><td><img src="/img/rafkappers.svg" /></td></tr></table></div>
   <div id="nonsplash">
       <script>document.getElementById('nonsplash').style.display = 'none';</script>
     {% include header.html %}
-    <div class="intro"><div><div>
+    <div class="intro">
+        <div class="slider">
+          <div id="slide1" class="slide" style="background: url('{{ page.slider[0].image }}') center center no-repeat; background-size: cover;"></div>
+          <div id="slide2" class="slide" style="background: url('{{ page.slider[1].image }}') center center no-repeat; background-size: cover;"></div>
+          <div id="slide3" class="slide" style="background: url('{{ page.slider[2].image }}') center center no-repeat; background-size: cover;"></div>
+        </div>
+
+    <div><div>
+
   		<div class="container">
   			<div class="row">
   		    	<div class="col-lg-2 col-md-1"></div>
@@ -23,8 +42,10 @@
                         <div class="post-content">
                               <p>{{ d.text }}</p>
                               <a href="#contact" class="btn btn-primary">Maak een afspraak</a><br />
-                              <a href="tel:020-6732374" class="btn mobile">bel 020-6732374</a>
-                              <span class="btn desktop">bel 020-6732374</span>
+                              <!--<a href="tel:026-3257352" class="btn mobile">bel 026-3257352</a>
+                              <span class="btn desktop">bel 026-3257352</span>-->
+                              <a href="tel:0627189165" class="btn mobile">bel 0627189165</a>
+                              <span class="btn desktop">bel 0627189165</span>
                         </div>
                 </article>
             {% endfor %}
@@ -46,8 +67,7 @@
                           <h1 class="post-title editable">Over Raf Kappers</h1>
                         </header>
                       
-                        <div class="post-content"><div class="editable"><p>Welkom op de website van Raf Kappers. Wat ik als eigenaar van deze salon het belangrijkste vind, is dat je als klant persoonlijke aandacht krijgt en het gevoel krijgt dat je welkom bent. Wij onderscheiden onszelf door de tijd te nemen voor een behandeling, of je nu komt voor het knippen van je vertrouwde kapsel of een nieuwe coupe, wij willen dat de klant tevreden de deur uitloopt. Huissen is een prettige stad om te wonen en te werken, ik voel mij er thuis en dat gevoel van thuiskomen willen wij onze klanten ook bieden. Kom snel eens langs!<!--<a href="/over-ons/index.html">lees&nbsp;meer&nbsp;&rarr;</a>--></p></div>
-                              <a href="/#contact" class="btn btn-primary">Contact</a>
+                        <div class="post-content"><div class="editable"><p>Welkom op de website van Raf Kappers. Wat ik als eigenaar van deze salon het belangrijkste vind, is dat je als klant persoonlijke aandacht krijgt en het gevoel krijgt dat je welkom bent. Wij onderscheiden onszelf door de tijd te nemen voor een behandeling, of je nu komt voor het knippen van je vertrouwde kapsel of een nieuwe coupe, wij willen dat de klant tevreden de deur uitloopt. Huissen is een prettige stad om te wonen en te werken, ik voel mij er thuis en dat gevoel van thuiskomen willen wij onze klanten ook bieden. Kom snel eens langs!</p></div>
                         </div>
                       
                 </article>
@@ -60,7 +80,7 @@
 
 
 
-    <div class="salon" id="openingstijden">
+    <div class="salon" id="openingstijden"><div>
       <div class="container">
         <div class="circle">
           <article>
@@ -71,7 +91,7 @@
               {% include openingstijden.html %}
             </div>
         </article></div>
-      </div>
+      </div></div>
     </div>
 
 
@@ -90,6 +110,9 @@
               {% if forloop.index == 10 %}</table></div><div class="col-sm-6"><table cellpadding="0" cellspacing="0">{% endif %}
             {% endfor %}
             </table>
+            </div>
+            <div class="col-sm-12 text-center">
+            <a href="/#contact" class="btn btn-default" style="margin: 30px 0 15px;">Maak een afspraak</a>
             </div>
           </div>
       </div>
@@ -127,12 +150,13 @@
                 
                         <header class="post-header">
                           <h1 class="post-title editable">Contact</h1>
-                          <span style="position: relative; bottom: 20px;">Alléén op afspraak! Bel: 020-325 73 52
+                          <span style="position: relative; bottom: 30px;">Bel voor een afspraak! Tel: <!--026-325 73 52-->0627189165
+
                         </header>
             </div> 
         </div>
         <div class="row">
-            <div class="col-sm-2 col-lg-3"></div>
+            <div class="col-lg-3"></div>
             <div class="col-sm-8 col-lg-6">                            
                         <div class="post-content"><style type="text/css">
             /* Set a size for our map container, the Google Map will take up 100% of this container */
@@ -145,7 +169,7 @@
             }
             #mapoverlay {position: absolute; top: 0; left: 0; background: transparent}
         </style>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU3Faz5k3-XoQ5epKRAeR_wfvUMlwSCIM"></script>
         
         <script type="text/javascript">
             // When the window has finished loading create our google map below
@@ -191,10 +215,9 @@
 
 
         </script>
-<div id="mapcontainer"><div id="map"></div><div id="mapoverlay" style="cursor: pointer;" onclick="window.open('https://www.google.nl/maps/place/Langestraat+62,+6851+AS+Huissen/@51.9390118, 5.9397008');"></div></div>
-                        </div>
+<div id="mapcontainer"><div id="map"></div><div id="mapoverlay" style="cursor: pointer;" onclick="window.open('https://www.google.nl/maps/place/Langestraat+62,+6851+AS+Huissen/@51.9390118, 5.9397008');"></div></div><br />                        </div>
             </div>
-            <div class="col-sm-2 col-lg-3 text-left" style="font-size: 16px; line-height: 1.8em;">{% include contactinfo.html %}</div>
+            <div class="col-sm-4 col-lg-3 text-left" style="font-size: 16px; line-height: 1.8em;">{% include contactinfo.html %}</div>
           </div>
         </article>
       </div>

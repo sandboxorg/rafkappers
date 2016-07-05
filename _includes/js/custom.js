@@ -20,6 +20,12 @@ function showslide(el,now) {
 		}
 	}
 }
+function slide() {
+	$('.slider div:last-child').fadeOut(1000, function () {
+		$('.slider').prepend($('.slider div:last-child'));
+		$('.slider > div ').show();
+	});
+}
 function get_cookie(Name) {
     var search = Name + "="
     var returnvalue = "";
@@ -206,5 +212,5 @@ $( document ).ready(function() {
         	}
         }); 
     });
-
+    setInterval(function(){ slide(); }, 6000);
 });
