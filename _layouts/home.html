@@ -2,7 +2,18 @@
 <html>
 
   {% include head.html %}
-
+<style>
+@media all and (max-width: 767px) {
+  #slide1 {background-image: url('//images.weserv.nl/?url=www.rafkappers.nl{{ page.slider[0].image }}?w=767&h=600&t=squaredown')!important; background-size: cover!important;}
+  #slide2 {background-image: url('//images.weserv.nl/?url=www.rafkappers.nl{{ page.slider[1].image }}?w=767&h=600&t=squaredown')!important; background-size: cover!important;}
+  #slide3 {background-image: url('//images.weserv.nl/?url=www.rafkappers.nl{{ page.slider[2].image }}?w=767&h=600&t=squaredown')!important; background-size: cover!important;}
+}
+@media all and (max-width: 450px) {
+  #slide1 {background-image: url('//images.weserv.nl/?url=www.rafkappers.nl{{ page.slider[0].image }}?w=450&h=600&t=squaredown')!important; background-size: cover!important;}
+  #slide2 {background-image: url('//images.weserv.nl/?url=www.rafkappers.nl{{ page.slider[1].image }}?w=450&h=600&t=squaredown')!important; background-size: cover!important;}
+  #slide3 {background-image: url('//images.weserv.nl/?url=www.rafkappers.nl{{ page.slider[2].image }}?w=450&h=600&t=squaredown')!important; background-size: cover!important;}
+}
+</style>
   <body class="home" id="top">
   <div id="splash"><table cellpadding="0" cellspacing="0"><tr><td><img src="/img/rafkappers.svg" /></td></tr></table></div>
   <div id="nonsplash">
