@@ -297,17 +297,19 @@ vertical-align: middle;
   form, .twocols .post-content p {padding-right: 0px;}
 }
 @media all and (max-width: 767px) {
+  body, #splash, .navbar-default, .salon .circle {background-image: url('/img/bg_small.png');}
   .navbar-default .navbar-collapse {background: $accentkleur; border: none;}
   .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {margin-left: 15px!important;}
-  .salon {background-image: url('/img/rafkappers2.jpg');}
+  .salon {background-image: url('/img/rafkappers2_small.jpg');}
 }
 @media all and (max-width: 600px) {
   .mobile {display: inline-block;}
   .desktop {display: none;}
 }
 @media all and (max-width: 450px) {
+  body, #splash, .navbar-default, .salon .circle {background-image: url('/img/bg_smaller.png');}
   .salon .circle p {width: 280px;}
   .salon .circle p .time {width: 140px;}
   .salon .circle p .day {width: 140px;}
-  .salon {background-image: url('/img/rafkappers2.jpg');}
+  .salon {background-image: url('/img/rafkappers2_smaller.jpg');}
 }

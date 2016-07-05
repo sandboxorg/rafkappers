@@ -1,6 +1,6 @@
 ---
 title: Sharon Reijmers
-image: /1.png
+image: /img/1.jpg
 functie: Styliste
 order: 3
 ---
