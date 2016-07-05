@@ -113,6 +113,8 @@ body.iOS .salon {background-attachment: scroll;}
 .intro .highlight article .btn-primary {display: inline-block; margin-bottom: 10px;}
 .intro .btn.desktop {cursor: text; padding: 0; -webkit-user-select: text; -moz-user-select: text; -ms-user-select: text;}
 
+.slide {position: absolute; width: 100%; height: 600px; z-index:0;}
+
 .light {text-align: center; padding: 90px 0; background: #e9e9e9; color: $accentkleur;}
 .light p a {color: #292929;}
 .light .post-content {}
