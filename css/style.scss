@@ -121,8 +121,8 @@ body.iOS .salon {background-attachment: scroll;}
 .light .post-content {}
 .light .post-content p {color: #292929;}
 
-.salon {height: 650px; background: url('/img/rafkappers2.jpg') center center no-repeat; background-size: cover; background-attachment: fixed;}
-.salon > div {background: rgba(0,0,0,0.5); height: 650px;}
+.salon {height: 650px; background: url('/img/rafkappers2.jpg') center center no-repeat; background-size: cover; background-attachment: fixed; overflow: hidden;}
+.salon > div {background: rgba(0,0,0,0.5); position: absolute; width: 100%; overflow: hidden; height: 650px;}
 .salon .circle {
 	text-align: center; 
 	background: #292929 url('/img/bg.png') center top; 
@@ -141,7 +141,7 @@ body.iOS .salon {background-attachment: scroll;}
 .salon .post-content {}
 .salon .post-content p {color: #e9e9e9;}
 
-.page-template .salon {height: 240px; background-attachment: scroll;}
+.page-template .salon, .page-template .salon > div {height: 240px; background-attachment: scroll;}
 
 .twocols {padding: 0 0 90px; background: #e9e9e9; color: $accentkleur;}
 .twocols .post-content p {color: #292929; padding-right: 30px;}
@@ -172,19 +172,19 @@ footer p {margin: 0; padding-right: 30px;}
 footer a, footer a:hover, footer a:focus {color: $accentkleur;}
 .site-footer {font-size: 16px; line-height: 1.8em; padding: 0 0 90px; background: #e9e9e9; color: $accentkleur;}
 .site-footer .row > div {max-height: 99999px;}
-.site-footer h3 {padding: 90px 0 0; clear: both;}
+.site-footer h3 {padding: 70px 0 0; clear: both;}
 .site-footer .day {float: left; width: 105px;}
 .site-footer2 {font-size: 14px; padding: 15px 0; max-height: 99999px;}
 .site-footer2 .fa {margin-left: 5px; top: -2px; vertical-align: middle;}
 .site-footer2 a, .site-footer2 a:hover, .site-footer2 a:focus {color: #e9e9e9; font-family: 'Futura Medium'; font-weight: normal; text-decoration: none;}
 
-.navbar {border-radius: 0px!important; font-size: 14px; line-height: 1.4em;}
+.navbar {border-radius: 0px!important; font-size: 14px; line-height: 1.4em; height: 87px;}
 .navbar-default {z-index: 2; position: absolute; width: 100%; background: #292929 url('/img/bg.png') center top; border: 0; border-bottom: 1px solid #777; text-transform: uppercase;}
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {opacity: 1; text-decoration: none; border-top: 3px solid transparent; color: $tekstkleur_op_basis; margin: 25px 0 30px 30px; padding: 4px 0;}
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {border-top: 3px solid $tekstkleur_op_basis;}
 .navbar-collapse {-webkit-box-shadow: none; box-shadow: none;}
-.navbar-default .navbar-toggle {margin-top: 20px; margin-bottom: 22px;}
+.navbar-default .navbar-toggle {margin-top: 25px; margin-bottom: 22px;}
 .navbar-default .navbar-toggle .icon-bar {background-color: $tekstkleur_op_basis;}
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {background-color: transparent; opacity: 1;}
 .navbar-default .navbar-toggle {border-color: transparent;}
@@ -308,8 +308,12 @@ vertical-align: middle;
 }
 @media all and (max-width: 450px) {
   body, #splash, .navbar-default, .salon .circle {background-image: url('/img/bg_smaller.png');}
+  .salon {max-width: 450px;}
+  .salon > div {width: 450px;}
   .salon .circle p {width: 280px;}
   .salon .circle p .time {width: 140px;}
   .salon .circle p .day {width: 140px;}
   .salon {background-image: url('/img/rafkappers2_smaller.jpg');}
+  .behandelingen tr td:nth-child(1) {padding-left: 0px;}
+  .behandelingen tr td:nth-child(3) {padding-right: 0px;}
 }
