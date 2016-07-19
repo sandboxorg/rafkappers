@@ -85,7 +85,7 @@
                           <h1 class="post-title editable">Gallerij</h1>
                         </header>
 
-<div class="gallery_images"><span id="prevbutton" onclick="galleryprev()" style="cursor: pointer;">‹</span><div>{% for image in page.images %}<a href="{{ page.url | remove: 'index.html' }}?url={{ image.image }}"><img src="//images.weserv.nl/?url=www.rafkappers.nl{{ image.image }}&w=250&h=250&t=square" /></a>{% endfor %}</div><span id="nextbutton" onclick="gallerynext()" style="cursor: pointer;">›</span></div>
+<div class="gallery_images"><span id="prevbutton" onclick="galleryprev()" style="cursor: pointer;">‹</span><div>{% for image in page.images %}<a href="http://www.rafkappers.nl{{ page.url | remove: 'index.html' }}?url={{ image.image }}"><img src="//images.weserv.nl/?url=www.rafkappers.nl{{ image.image }}&w=250&h=250&t=square" /></a>{% endfor %}</div><span id="nextbutton" onclick="gallerynext()" style="cursor: pointer;">›</span></div>
 
         </article>
       </div>
