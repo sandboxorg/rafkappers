@@ -27,32 +27,35 @@
           <div id="slide3" class="slide" style="background: url('//images.weserv.nl/?url=www.rafkappers.nl{{ page.slider[2].image }}&w=2000&h=600&t=square&q=65') center center no-repeat; background-size: cover;"></div>
         </div>
 
-    
+    	<div>
+    		<div>
 
-  		<div class="container">
-  			<div class="row">
-  		    	<div class="col-lg-2 col-md-1"></div>
-            <div class="col-lg-8 col-md-10 highlight">
-            <table cellpadding="0" cellspacing="0"><tr><td>
-            {% for d in page.highlights %}
-  		    	    <article id="n{{ forloop.index }}">
-                        <header class="post-header">
-                          <h1 class="post-title">{{ d.title }}</h1>
-                        </header>
-                      
-                        <div class="post-content">
-                              <p>{{ d.text }}</p>
-                              <a href="#contact" class="btn btn-primary">Maak een afspraak</a><br />
-                              <a href="tel:026-3257352" class="btn mobile">bel 026-325 73 52</a>
-                              <span class="btn desktop">bel 026-325 73 52</span>
-                        </div>
-                </article>
-            {% endfor %}
-            </td></tr></table>
-  		    	</div>
-  		    </div>
-  		</div>
-    </div>
+		  		<div class="container">
+		  			<div class="row">
+		  		    	<div class="col-lg-2 col-md-1"></div>
+			            <div class="col-lg-8 col-md-10 highlight">
+			            <table cellpadding="0" cellspacing="0"><tr><td>
+			            {% for d in page.highlights %}
+			  		    	    <article id="n{{ forloop.index }}">
+			                        <header class="post-header">
+			                          <h1 class="post-title">{{ d.title }}</h1>
+			                        </header>
+			                      
+			                        <div class="post-content">
+			                              <p>{{ d.text }}</p>
+			                              <a href="#contact" class="btn btn-primary">Maak een afspraak</a><br />
+			                              <a href="tel:026-3257352" class="btn mobile">bel 026-325 73 52</a>
+			                              <span class="btn desktop">bel 026-325 73 52</span>
+			                        </div>
+			                </article>
+			            {% endfor %}
+			            </td></tr></table>
+		  		    	</div>
+		  		    </div>
+		  		</div>
+		    </div>
+		</div>
+	</div>
 
 
     <div class="light" id="over-ons">
@@ -94,7 +97,8 @@
 
 
 
-    <div class="salon" id="openingstijden"><div>
+  <div class="salon" id="openingstijden">
+    <div>
       <div class="container">
         <div class="circle">
           <article>
@@ -104,9 +108,11 @@
             <div class="post-content">
               {% include openingstijden.html %}
             </div>
-        </article></div>
-      </div></div>
+          </article>
+        </div>
+      </div>
     </div>
+  </div>
 
 
     <div class="behandelingen" id="behandelingen">
