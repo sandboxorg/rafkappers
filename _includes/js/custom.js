@@ -155,7 +155,7 @@ $( document ).ready(function() {
 	
 	showslide($('.highlight article').first(),true);
 	
-	$('a').click(function(){
+	$('.navbar a').click(function(){
 		if($('body').hasClass('home') && $(this).attr('href')) {
 			el = $.attr(this, 'href').replace('/','');
 			if(el!='#') {
