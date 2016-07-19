@@ -4,6 +4,12 @@ slider:
   - image: /img/rafkappers1_large.jpg
   - image: /img/rafkappers3_large.jpg
   - image: /img/rafkappers_large.jpg
+images:
+  - image: /img/rafkappers1_large.jpg
+  - image: /img/rafkappers3_large.jpg
+  - image: /img/rafkappers_large.jpg
+  - image: /img/rafkappers3_large.jpg
+  - image: /img/rafkappers_large.jpg
 highlights:
   - title: Nieuwe locatie
     text: 'Sinds 1 juli zijn wij gevestigd aan de Langestraat 62 in Huissen. Na een maandenlange verbouwing zijn wij trots op het bereikte resultaat. Nieuwsgierig geworden? Je bent van harte welkom om een kijkje te komen nemen!'

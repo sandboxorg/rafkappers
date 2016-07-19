@@ -121,6 +121,28 @@ body.iOS .salon {background-attachment: scroll;}
 .light .post-content {}
 .light .post-content p {color: #292929;}
 
+#gallery {color: white; padding: 90px 0;}
+.gallery_images {overflow: hidden; margin-bottom: 10px; white-space: nowrap;}
+.gallery_images * {  
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+.gallery_images > div {display: inline-block;}
+.gallery_images a {display: inline-block; margin: 10px; display: none;}
+.gallery_images > div a:nth-child(1) {display: inline-block;}
+.gallery_images > div a:nth-child(2) {display: inline-block;}
+.gallery_images > div a:nth-child(3) {display: inline-block;}
+.gallery_images > div a:nth-child(4) {display: inline-block;}
+.gallery_images > div a:nth-child(5) {display: inline-block;}
+.gallery_images a img {display: inline; width: 180px; border: 1px solid #e9e9e9; }
+#gallery #nextbutton, #gallery #prevbutton {color: white; display: inline-block; vertical-align: middle; height: 175px; line-height: 165px; float: none; margin: 0; padding: 0 5px;}
+
+
 .salon {height: 650px; background: url('/img/rafkappers2.jpg') center center no-repeat; background-size: cover; background-attachment: fixed; overflow: hidden;}
 .salon > div {background: rgba(0,0,0,0.5); position: absolute; width: 100%; overflow: hidden; height: 650px;}
 .salon .circle {
@@ -261,12 +283,7 @@ label {font-weight: normal;}
 #front img {display: block; width: 100%;}
 .post-content img, .post-content iframe {max-width: 100%;}
 
-#gallery {padding-top: 10px; padding-bottom: 20px;}
-#gallery.row {margin-left: -4px; margin-right: -4px;}
-#gallery.row > div {padding: 4px;}
-#gallery img {width: 100%;}
-
-#lightbox {cursor: pointer; display: none; z-index: 99; position: fixed; top: 0; left: 0; background: #222 url('/img/preloader.gif') center center no-repeat; text-align: center;}
+#lightbox {cursor: pointer; display: none; z-index: 99; position: fixed; top: 0; left: 0; background: url('/img/preloader.gif') center center no-repeat; text-align: center;}
 #lightbox #image {z-index: 0; display: inline; max-height: 95vh; max-width: 95vw;}
 #nextbutton {color: #e9e9e9; float: right; width: 50px; height: 50px; line-height: 45px; margin-right: 2.5vw; font-size: 50px;}
 #prevbutton {color: #e9e9e9; float: left; width: 50px; height: 50px; line-height: 45px; margin-left: 2.5vw; font-size: 50px;}
@@ -290,20 +307,46 @@ vertical-align: middle;
 
 @media all and (max-width: 1199px) {
 .behandelingen .sidebar {padding-left: 0!important; border-left: 0!important;}
+  .gallery_images a {display: none;}
+  .gallery_images > div a:nth-child(1) {display: inline-block;}
+  .gallery_images > div a:nth-child(2) {display: inline-block;}
+  .gallery_images > div a:nth-child(3) {display: inline-block;}
+  .gallery_images > div a:nth-child(4) {display: inline-block;}
+  .gallery_images > div a:nth-child(5) {display: none;}
 }
 
 @media all and (max-width: 991px) {
   form, .twocols .post-content p {padding-right: 0px;}
+  .gallery_images a {display: none;}
+  .gallery_images > div a:nth-child(1) {display: inline-block;}
+  .gallery_images > div a:nth-child(2) {display: inline-block;}
+  .gallery_images > div a:nth-child(3) {display: inline-block;}
+  .gallery_images > div a:nth-child(4) {display: none;}
+  .gallery_images > div a:nth-child(5) {display: none;}
 }
 @media all and (max-width: 767px) {
   body, #splash, .navbar-default, .salon .circle {background-image: url('/img/bg_small.png');}
   .navbar-default .navbar-collapse {background: $accentkleur; border: none;}
   .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {margin-left: 15px!important;}
   .salon {background-image: url('/img/rafkappers2_small.jpg');}
+  .gallery_images a {display: none;}
+  .gallery_images > div a:nth-child(1) {display: inline-block;}
+  .gallery_images > div a:nth-child(2) {display: inline-block;}
+  .gallery_images > div a:nth-child(3) {display: none;}
+  .gallery_images > div a:nth-child(4) {display: none;}
+  .gallery_images > div a:nth-child(5) {display: none;}
 }
 @media all and (max-width: 600px) {
   .mobile {display: inline-block;}
   .desktop {display: none;}
+}
+@media all and (max-width: 545px) {
+  .gallery_images a {display: none;}
+  .gallery_images > div a:nth-child(1) {display: inline-block;}
+  .gallery_images > div a:nth-child(2) {display: none;}
+  .gallery_images > div a:nth-child(3) {display: none;}
+  .gallery_images > div a:nth-child(4) {display: none;}
+  .gallery_images > div a:nth-child(5) {display: none;}
 }
 @media all and (max-width: 450px) {
   body, #splash, .navbar-default, .salon .circle {background-image: url('/img/bg_smaller.png');}
