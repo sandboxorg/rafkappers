@@ -1,5 +1,5 @@
 ---
-layout: contact
+layout: home
 slider:
   - image: /img/rafkappers1_large.jpg
   - image: /img/rafkappers3_large.jpg
