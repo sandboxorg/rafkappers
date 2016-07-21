@@ -9,6 +9,8 @@ defaults:
     values:
       layout: 'post'
 
+baseurl: "/rafkappers"
+
 permalink: /nieuws/:year/:month/:day/:title/
 
 collections:
